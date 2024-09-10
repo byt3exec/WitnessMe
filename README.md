@@ -71,7 +71,7 @@ Running WitnessMe from a Docker container is fully supported and is the easiest/
 Pull the image from Docker Hub:
 
 ```console
-docker pull byt3bl33d3r/witnessme
+docker pull emonilo/witnessme
 ```
 
 You can then spin up a docker container, run it like the main `witnessme` script and pass it the same arguments:
@@ -104,7 +104,7 @@ All of the WitnessMe scripts should now be in your PATH and ready to go.
 You really should only install WitnessMe this way if you intend to hack on the source code. You're going to Python 3.7+ and [Poetry](https://python-poetry.org/): please refer to the Poetry installation documentation in order to install it.
 
 ```console
-git clone https://github.com/byt3bl33d3r/WitnessMe && cd WitnessMe
+git clone https://github.com/emonilo/WitnessMe && cd WitnessMe
 poetry install
 ```
 
@@ -115,7 +115,7 @@ poetry install
 Install WitnessMe using Docker:
 
 ```console
-docker pull byt3bl33d3r/witnessme
+docker pull emonilo/witnessme
 ```
 
 Get the `$IMAGE_ID` from the `docker images` command output, then run the following command to drop into a shell inside the container. Additionally, specify the `-v` flag to mount the current directory inside the container at the path `/transfer` in order to copy the scan results back to your host machine (if so desired):
